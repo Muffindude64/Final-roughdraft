@@ -17,11 +17,18 @@ var createScene = function () {
     var scene = new BABYLON.Scene(engine);
 
     // Need help setting the camera to look striaght foward from this positon, along with help making the camera animate to circle the 3d model
-    var camera = new BABYLON.FreeCamera("camera1", new BABYLON.Vector3(0, 15, -15), scene);
+    var camera = new BABYLON.FreeCamera("camera1", new BABYLON.Vector3(0, 5, -10), scene);
+
+// camera movement
+
+    // var campos = new BABYLON.Vector3(0, 0, 0);
+    // var camrot = new BABYLON.Vector3(0, 10, 0);
+    // var anims = animate([{ obj: camera, prop: 'position', val: campos, dims:['x', 'y', 'z']}, 
+    //     { obj: camera, prop: 'rotation', val: camrot, dims:['x', 'y', 'z']}], scene);
 
     // This targets the camera to scene origin
     // need help here to mamke the camera default to pointing directly at the body
-    camera.setTarget(BABYLON.Vector3.Zero());
+    // camera.setTarget(BABYLON.Vector3.Zero());
 
   
     var light = new BABYLON.HemisphericLight("light", new BABYLON.Vector3(0, 1, 0), scene);
